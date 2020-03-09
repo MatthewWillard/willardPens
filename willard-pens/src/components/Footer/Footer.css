@@ -1,0 +1,17 @@
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    height: 15px;
+    background-size: auto;
+    padding-top: 10px;
+  }
+  
+  .Footer p{
+    font-size: 11px;
+    font-style: italic;
+    color: black;
+    margin-top: 0px;
+  }
