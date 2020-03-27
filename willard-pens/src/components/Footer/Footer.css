@@ -9,3 +9,9 @@
     padding-top: 10px;
   }
   
+  .Footer p{
+    font-size: 11px;
+    font-style: italic;
+    color: black;
+    margin-top: 0px;
+  }
