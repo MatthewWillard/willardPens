@@ -48,12 +48,3 @@
   }
   
   
-  .Add-employee li {
-    text-align: left;
-    font-size: 25px;
-  }
-  
-  .add-employee-list {
-    display: flex;
-    justify-content: center;
-  }
