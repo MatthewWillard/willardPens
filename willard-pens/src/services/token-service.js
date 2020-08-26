@@ -31,10 +31,7 @@ const TokenService = {
       TokenService.readJwtToken()
     );
     timeoutId = setTimeout(callback, msUntilExpiry - tenSecondsInMs);
-  },
-  clearCallbackBeforeExpiry() {
-    clearTimeout(timeoutId);
-  }
+
 };
 
 export default TokenService;
