@@ -26,11 +26,7 @@ const TokenService = {
   getMsUntilExpiry(payload) {
     return payload.exp * 1000 - Date.now();
   },
-  queueCallbackBeforeExpiry(callback) {
-    const msUntilExpiry = TokenService.getMsUntilExpiry(
-      TokenService.readJwtToken()
-    );
-    timeoutId = setTimeout(callback, msUntilExpiry - tenSecondsInMs);
+
 
 };
 
