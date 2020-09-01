@@ -20,12 +20,8 @@ const TokenService = {
   parseJwt(jwt) {
     return jwtDecode(jwt);
   },
-  readJwtToken() {
-    return TokenService.parseJwt(TokenService.getAuthToken());
-  },
-  getMsUntilExpiry(payload) {
-    return payload.exp * 1000 - Date.now();
-  },
+
+
 
 
 };
