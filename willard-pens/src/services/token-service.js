@@ -17,9 +17,7 @@ const TokenService = {
   hasAuthToken() {
     return !!TokenService.getAuthToken();
   },
-  parseJwt(jwt) {
-    return jwtDecode(jwt);
-  },
+
 
 
 
