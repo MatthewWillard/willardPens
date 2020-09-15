@@ -53,10 +53,7 @@ const employeesApiService = {
         id,
         ...data
       })
-    }).then(res => {
-      if (!res.ok) {
-        throw new Error("Something went wrong!  Please try again.");
-      }
+
     });
   }
 };
