@@ -42,17 +42,6 @@ const employeesApiService = {
       }
     });
   },
-  updateemployee(id, data) {
-    return fetch(`${config.API_ENDPOINT}/employees/${id}`, {
-      method: "PATCH",
-      headers: {
-        "content-type": "application/json",
-        authorization: `bearer ${TokenService.getAuthToken()}`
-      },
-      body: JSON.stringify({
-        id,
-        ...data
-      })
 
     });
   }
