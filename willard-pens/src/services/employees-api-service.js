@@ -32,10 +32,7 @@ const employeesApiService = {
       method: "DELETE",
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`
-      },
-      body: JSON.stringify({
-        id
-      })
+  
     }).then(res => {
       if (!res.ok) {
         throw new Error("Something went wrong!  Please try again.");
