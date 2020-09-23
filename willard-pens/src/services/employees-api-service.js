@@ -33,10 +33,7 @@ const employeesApiService = {
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`
   
-    }).then(res => {
-      if (!res.ok) {
-        throw new Error("Something went wrong!  Please try again.");
-      }
+   
     });
   },
 
