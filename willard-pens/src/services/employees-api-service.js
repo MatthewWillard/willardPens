@@ -27,12 +27,7 @@ const employeesApiService = {
       return !res.ok ? res.json().then(e => Promise.reject(e)) : res.json();
     });
   },
-  deleteemployee(id) {
-    return fetch(`${config.API_ENDPOINT}/employees/${id}`, {
-      method: "DELETE",
-      headers: {
-        authorization: `bearer ${TokenService.getAuthToken()}`
-  
+ 
    
     });
   },
