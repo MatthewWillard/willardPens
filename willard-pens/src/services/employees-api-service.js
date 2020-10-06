@@ -18,10 +18,7 @@ const employeesApiService = {
       headers: {
         "content-type": "application/json",
         authorization: `bearer ${TokenService.getAuthToken()}`
-      },
-      body: JSON.stringify({
-        name,
-        user_id
+ 
       })
 
   },
