@@ -11,15 +11,7 @@ const employeesApiService = {
     }).then(res => {
       return !res.ok ? res.json().then(e => Promise.reject(e)) : res.json();
     });
-  },
-  postemployee(name, user_id) {
-    return fetch(`${config.API_ENDPOINT}/employees`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        authorization: `bearer ${TokenService.getAuthToken()}`
- 
-      })
+
 
   },
  
