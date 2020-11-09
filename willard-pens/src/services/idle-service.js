@@ -22,11 +22,7 @@ const IdleService = {
       document.addEventListener(event, IdleService.resetIdleTimer, true)
     );
   },
-  unRegisterIdleResets() {
-    clearTimeout(timeoutId);
-    notIdleEvents.forEach(event =>
-      document.removeEventListener(event, IdleService.resetIdleTimer, true)
-    );
+
   }
 };
 
