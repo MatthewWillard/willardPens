@@ -16,11 +16,7 @@ const IdleService = {
   resestIdleTimer(ev) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(idleCallback, fiveMinutesInMs);
-  },
-  registerIdleTimerResets() {
-    notIdleEvents.forEach(event =>
-      document.addEventListener(event, IdleService.resetIdleTimer, true)
-    );
+
   },
 
   }
