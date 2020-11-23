@@ -12,12 +12,7 @@ let fiveMinutesInMs = 5 * 60 * 1000;
 const IdleService = {
   setIdleCallback(idleCb) {
     idleCallback = idleCb;
-  },
-  resestIdleTimer(ev) {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(idleCallback, fiveMinutesInMs);
 
-  },
 
   }
 };
