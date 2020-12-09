@@ -9,10 +9,6 @@ let notIdleEvents = [
 ];
 let fiveMinutesInMs = 5 * 60 * 1000;
 
-const IdleService = {
-  setIdleCallback(idleCb) {
-    idleCallback = idleCb;
-
 
   }
 };
